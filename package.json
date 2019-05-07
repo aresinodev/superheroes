@@ -2,13 +2,13 @@
   "name": "superheroes",
   "version": "1.0.0",
   "scripts": {
+    "start": "node server.js",
     "ng": "ng",
-    "start": "node Server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --aot --prod"
+    "heroku-postbuild": "ng build --prod"
   },
   "private": true,
   "dependencies": {
@@ -28,7 +28,8 @@
     "express": "^4.16.4",
     "font-awesome": "^4.7.0",
     "rxjs": "6.3.3",
-    "zone.js": "~0.8.26"
+    "zone.js": "~0.8.26",
+    "typescript": "~2.7.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.7.0",
@@ -46,7 +47,10 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "~5.4.0",
     "ts-node": "~5.0.1",
-    "tslint": "~5.9.1",
-    "typescript": "~2.7.2"
+    "tslint": "~5.9.1"
+  },
+  "engines": {
+    "node": "10.15.3",
+    "npm": "6.9.0"
   }
 }
