@@ -1,0 +1,24 @@
+.image-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  width: 6em;
+  margin-right: 1em;
+}
+
+img {
+  width: 6em;
+  height: 6em;
+}
+
+.body-style-img img {
+  width: 4em;
+  height: 4em;
+}
+
+.img-name {
+  font-size: .6em;
+  text-align: center;
+}

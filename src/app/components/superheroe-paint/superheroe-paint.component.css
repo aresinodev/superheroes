@@ -1,0 +1,37 @@
+.superheroe-paint-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1em;
+  background: transparent;
+}
+
+.left-row, .right-row {
+  width: 10%;
+  height: 100%;
+}
+
+.sketch-container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sketch-left, .sketch-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  height: 100%;
+}
+
+.empty, .head, .body, .legs, .coat {
+  width: 10em;
+  height: 10em;
+}
+
+.coat img {
+  transform: rotate(349deg);
+}

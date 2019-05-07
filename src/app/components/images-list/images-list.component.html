@@ -1,0 +1,11 @@
+<div class="d-flex flex-row justify-content-between"
+style="width: 100%;background: transparent;">
+  <div class="images d-flex flex-row justify-content-between"
+    style="width: 100%;">
+    <div class="image-item" *ngFor="let item of imagesList"
+    (click)="imageToPaint(item)" [ngClass]="{ 'body-style-img': type === 'cuerpo' }">
+      <img [src]="item.url">
+      <span class="img-name">{{ item.name }}</span>
+    </div>
+  </div>
+</div>

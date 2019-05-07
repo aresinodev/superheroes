@@ -1,0 +1,28 @@
+<div class="superheroe-paint-container">
+  <div class="left-row"></div>
+  <div class="sketch-container">
+    <div class="sketch-left">
+      <div class="head" style="padding-top: 1.1em;padding-left: 2em;">
+        <img [src]="head" style="width: 10em; height: 10em;"
+        *ngIf="head" />
+      </div>
+      <div class="body" style="padding-left: 2em;">
+        <img [src]="body" style="width: 10em; height: 10em;z-index: 1;
+        position: fixed;" *ngIf="body" />
+      </div>
+      <div class="legs" style="text-align: center; padding-left: 3.7em;">
+        <img [src]="legs" style="width: 6.5em; height: 8em;"
+        *ngIf="legs" />
+      </div>
+    </div>
+    <div class="sketch-right">
+      <div class="empty">&nbsp;</div>
+      <div class="coat" style="padding-left: 2em;">
+        <img [src]="coat" style="width: 12em; height: 12em;"
+        *ngIf="coat" />
+      </div>
+      <div class="empty">&nbsp;</div>
+    </div>
+  </div>
+  <div class="right-row"></div>
+</div>
